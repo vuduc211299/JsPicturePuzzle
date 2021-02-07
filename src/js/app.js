@@ -3,12 +3,12 @@ import PicturePuzzle from './PicturePuzzle'
 
 const picturePuzzle = new PicturePuzzle(
   document.querySelectorAll('#puzzle-wrapper > div')[0],
-  '../assets/1.jpg',
+  '../assets/2.jpg',
   600
 );
 const picturePuzzle2 = new PicturePuzzle(
   document.querySelectorAll('#puzzle-wrapper > div')[1],
-  '../assets/2.jpg',
+  '../assets/1.jpg',
   600,
   4
 );
