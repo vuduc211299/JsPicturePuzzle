@@ -3,18 +3,20 @@ import PicturePuzzle from './PicturePuzzle'
 
 const picturePuzzle = new PicturePuzzle(
   document.querySelectorAll('#puzzle-wrapper > div')[0],
-  '../assets/2.jpg',
-  600
-);
-const picturePuzzle2 = new PicturePuzzle(
-  document.querySelectorAll('#puzzle-wrapper > div')[1],
   '../assets/1.jpg',
   600,
   4
 );
+// const picturePuzzle2 = new PicturePuzzle(
+//   document.querySelectorAll('#puzzle-wrapper > div')[1],
+//   '../assets/1.jpg',
+//   600,
+//   4
+// );
 
 picturePuzzle.onSwap = function(movements){
   console.log(movements);
+  document.querySelector('#step').innerHTML = `Number of steps: ${movements}`
 };
 
 const modal = document.querySelector('#success-modal');

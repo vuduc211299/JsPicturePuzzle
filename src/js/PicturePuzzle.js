@@ -79,9 +79,6 @@ export default class PicturePuzzle {
   isAssembled() {
     for (let i = 0; i < this.cells.length; i++) {
       if (i !== this.cells[i].index) {
-        if (i === 6 && this.cells[i].index === 8 && this.cells[i + 1].index === i + 1) {
-          return true;
-        }
         return false;
       }
     }
