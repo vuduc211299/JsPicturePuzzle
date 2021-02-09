@@ -12,9 +12,6 @@ module.exports = {
   output: {
     path: __dirname + '/dist'
   },
-  plugins: [
-    new CleanWebpackPlugin(['dist']),
-  ],
   module: {
     rules: [
       {
